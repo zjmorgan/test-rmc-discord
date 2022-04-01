@@ -12,6 +12,7 @@ dependencies:
   - qt
   - pyqt
   - ipython
+  - pillow>=8.3.2
 variables:
   QT_QPA_PLATFORM: offscreen
   QT_DEBUG_PLUGINS: 1
