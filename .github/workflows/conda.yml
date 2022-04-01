@@ -37,6 +37,7 @@ jobs:
       run: |
         sudo apt install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xfixes0
         conda install pytest
+        conda install pyximport
         ulimit -c unlimited
         pip install -e .
         python -m pytest --pyargs disorder
