@@ -42,6 +42,6 @@ jobs:
         pip install -e .
         python -m pytest --pyargs disorder
     - name: Store artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          path: dist/*.tar.gz
+      uses: actions/upload-artifact@v2
+      with:
+        path: dist/*.tar.gz
