@@ -16,4 +16,5 @@ python -m pip install pytest cython ipython
 
 cd test-rmc-discord/test-rmc-discord
 
+pip install -e .
 python -m pytest --pyargs disorder
