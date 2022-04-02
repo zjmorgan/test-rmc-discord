@@ -41,7 +41,7 @@ jobs:
         ulimit -c unlimited
         pip install -e .
         python -m pytest --pyargs disorder
-      - name: Store artifacts
+    - name: Store artifacts
         uses: actions/upload-artifact@v2
         with:
           path: dist/*.tar.gz
