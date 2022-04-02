@@ -12,7 +12,6 @@ python -m pip install test-rmc-discord/test-rmc-discord/dist/*.tar.gz
 python -m pip install pytest
 
 # Run the tests on the installed source distribution
-mkdir tmp_for_test
-cd tmp_for_test
+cd test-rmc-discord/test-rmc-discord
 
 python -m pytest --pyargs disorder
