@@ -11,7 +11,7 @@ source build_env/bin/activate
 python -m pip install numpy scipy cython
 python -m pip install twine
 
-cd rmc-discord/rmc-discord
+cd test-rmc-discord/test-rmc-discord
 python setup.py sdist
 
 # Check whether the source distribution will render correctly
