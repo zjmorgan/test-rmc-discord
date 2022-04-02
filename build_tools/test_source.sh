@@ -14,4 +14,6 @@ export QT_QPA_PLATFORM=offscreen
 python -m pip install test-rmc-discord/test-rmc-discord/dist/*.tar.gz
 python -m pip install pytest
 
-python -m pytest --pyargs test-rmc-discord/test-rmc-discord/disorder
+cd test-rmc-discord/test-rmc-discord
+
+python -m pytest --pyargs disorder
