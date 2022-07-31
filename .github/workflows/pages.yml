@@ -36,10 +36,16 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v1
+      - name: Add conda to system path
+        run: |
+          # $CONDA is an environment variable pointing to the root of the miniconda directory
+          echo $CONDA/bin >> $GITHUB_PATH
+      - name: Install dependencies
+        run: |
+          conda install pydata_test_sphinx
       - name: Build Sphinx
         run: |
           cd docs
-          pip install pydata_sphinx_extension
           make html
           cd ..
       - run: bundle exec jekyll build --baseurl ${{ steps.pages.outputs.base_path }} # defaults output to '/_site'
