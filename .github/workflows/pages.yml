@@ -39,6 +39,7 @@ jobs:
       - name: Build Sphinx
         run: |
           cd docs
+          pip3 install pydata_sphinx_extension
           make html
           cd ..
       - run: bundle exec jekyll build --baseurl ${{ steps.pages.outputs.base_path }} # defaults output to '/_site'
