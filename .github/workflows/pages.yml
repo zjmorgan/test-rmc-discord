@@ -42,7 +42,7 @@ jobs:
           echo $CONDA/bin >> $GITHUB_PATH
       - name: Install dependencies
         run: |
-          conda install pydata-sphinx-theme
+          conda install -c conda-forge pydata-sphinx-theme
       - name: Build Sphinx
         run: |
           cd docs
