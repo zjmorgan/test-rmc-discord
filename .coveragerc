@@ -1,0 +1,6 @@
+[run]
+plugins = cython_coverage
+
+[report]
+show_missing = true
+omit = *__init__.py,*test_*

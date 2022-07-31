@@ -1,0 +1,21 @@
+name: environment
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - scipy
+  - matplotlib
+  - pycifrw
+  - nexusformat
+  - pyvista
+  - qt
+  - pyqt
+  - ipython
+  - cython
+  - pytest
+  - pillow>=8.3.2
+variables:
+  QT_QPA_PLATFORM: offscreen
+  QT_DEBUG_PLUGINS: 1
+  PYTEST_QT_API: pyqt5
